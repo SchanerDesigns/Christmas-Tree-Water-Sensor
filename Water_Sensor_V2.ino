@@ -47,7 +47,7 @@ void loop() {
   // check if the sensor is making contact. If it is, the sensorState is HIGH:
   if (sensorState == LOW) {
     // turn buzzer on periodically:
-    while(digitalRead(buttonPin) == LOW) {
+    while(digitalRead(sensorPin) == LOW) {
       digitalWrite(indicatorPin, HIGH);
       digitalWrite(buzzerPin, HIGH);
       delay(15);  // when on, the buzzer sounds for 15 ms
